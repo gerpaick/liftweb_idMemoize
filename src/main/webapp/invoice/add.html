@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+    <title>Add invoice</title>
+</head>
+<body class="lift:content_id=main">
+<div id="main" class="lift:surround?with=default;at=content">
+    <div>
+        <form class="lift:addInvoice?form=post">
+            <table class="invoice">
+                <tr>
+                    <td>Name:</td>
+                    <td><select name="name"/></td>
+                </tr>
+                <tr>
+                    <td>Status:</td>
+                    <td><input name="status"></td>
+                </tr>
+            </table>
+                                              <br/>
+                                              <br/>
+                                              <br/>
+
+            <table id="Items_lines">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                </tr>
+                </thead>
+            <tr  class="lift:addInvoice.showLines">
+             </tr>
+
+            </table>
+
+            <div><div class="lift:addInvoice.addLine?tr=Items_lines">add line</div></div>
+
+           
+            <input id="submit" type="submit" value="Save"/>
+        </form>
+    </div>
+
+
+</div>
+
+</body>
+</html>
