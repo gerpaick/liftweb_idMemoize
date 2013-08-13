@@ -34,9 +34,6 @@ src_managed
 */project/boot
 */*/project/boot
 
-sbt.sh
-sbt
-
 # db
 lift_proto*
 
