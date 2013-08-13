@@ -20,7 +20,7 @@ object Util extends Logger {
         val price = new scala.util.Random().nextDouble() * 10.0d
 
         item.name("Item #" + i).quantity(qty).invoice(1).price(price).save()
-        info("Item #: " + i + " added to invoice #" + invId)
+        info("Item #: " + i + " added to invoice #1")
       }
     }
   }
