@@ -168,6 +168,7 @@ class editInvoice(invoiceId: InvoiceInfo) {
               renderer =>
 //                 Retrieve lines from the db
                 val lines = invoice.items.all
+		println("============== " + lines.length + " =====")
                 lines match {
                   case a :: b => "#lines *" #> lines.map(line =>
                     "#name *" #> line.name.get &
