@@ -167,7 +167,7 @@ class editInvoice(invoiceId: InvoiceInfo) {
             "#Items_lines" #> SHtml.idMemoize {
               renderer =>
 //                 Retrieve lines from the db
-                val lines = invoice.items.all
+                val lines = invoice.reload.items.all
 		println("============== " + lines.length + " =====")
                 lines match {
                   case a :: b => "#lines *" #> lines.map(line =>
